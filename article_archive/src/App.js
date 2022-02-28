@@ -26,6 +26,9 @@ function App() {
     "난 급히 약을 사러 가기 위해 운전대를 잡았다. 모든게 생소하고 달리는 도로마저 익숙하지 않은 농네였다. 길 위엔 아무도 보이지 않았고 이대로 달려서 약국이 나오는지도 확실하지 않았다. 곧이어 무엇인가 날 이끄는 듯 역시 처음 보는 상가 앞에 차를 멈추고 ...",
   ]);
 
+  let [more, moreChange] = useState("조금 더 가까이");
+  let [like, likeChange] = useState("기분 너무 좋아");
+
   return (
     <div className="App">
       {/* 헤더 시작 */}
@@ -44,10 +47,10 @@ function App() {
           <div className="Article-Preview">{preview[0]}</div>
           <div className="Btn-Group">
             <button type="button" className="More-Btn">
-              조금 더 가까이
+              {more}
             </button>
             <button type="button" className="Comment-Btn">
-              내 의견은 이래
+              {like}
             </button>
           </div>
         </div>
@@ -59,10 +62,10 @@ function App() {
           <div className="Article-Preview">{preview[1]}</div>
           <div className="Btn-Group">
             <button type="button" className="More-Btn">
-              조금 더 가까이
+              {more}
             </button>
             <button type="button" className="Comment-Btn">
-              내 의견은 이래
+              {like}
             </button>
           </div>
         </div>
@@ -74,10 +77,10 @@ function App() {
           <div className="Article-Preview">{preview[2]}</div>
           <div className="Btn-Group">
             <button type="button" className="More-Btn">
-              조금 더 가까이
+              {more}
             </button>
             <button type="button" className="Comment-Btn">
-              내 의견은 이래
+              {like}
             </button>
           </div>
         </div>

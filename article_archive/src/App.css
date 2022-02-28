@@ -27,7 +27,7 @@
   top: -360px;
   mix-blend-mode: saturation;
 
-  z-index: 30;
+  z-index: 2;
 }
 
 /*타이틀*/
@@ -82,6 +82,8 @@
   align-items: left;
 
   margin-bottom: 96px;
+
+  z-index: 65;
 }
 
 .Article-Title {
@@ -99,6 +101,13 @@
   letter-spacing: -0.035em;
 
   color: #000000;
+
+  cursor: pointer;
+  transition: 300ms all;
+}
+
+.Article-Title:hover {
+  text-decoration: underline;
 }
 
 .Article-Author {
